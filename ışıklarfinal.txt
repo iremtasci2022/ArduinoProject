@@ -1,0 +1,152 @@
+int kirmizi1=1;
+int sari1=2;
+int yesil1=3;
+
+int kirmizi2=4;
+int sari2=5;
+int yesil2=6;
+
+int kirmizi3=7;
+int sari3=8;
+int yesil3=9;
+
+void setup()
+{
+  pinMode(kirmizi1, OUTPUT);
+  pinMode(sari1, OUTPUT);
+  pinMode(yesil1, OUTPUT);
+  
+  pinMode(kirmizi2, OUTPUT);
+  pinMode(sari2, OUTPUT);
+  pinMode(yesil2, OUTPUT);
+  
+  pinMode(kirmizi3, OUTPUT);
+  pinMode(sari3, OUTPUT);
+  pinMode(yesil3, OUTPUT);
+}
+
+void loop()
+{ 
+  for(int i=0;i<3;i++){
+  digitalWrite(kirmizi1, LOW); //1.yeşil diğerleri kırmızı
+  digitalWrite(sari1, LOW);
+  digitalWrite(yesil1, HIGH);
+  
+  digitalWrite(kirmizi2, HIGH);
+  digitalWrite(sari2, LOW);
+  digitalWrite(yesil2, LOW);
+  
+  digitalWrite(kirmizi3, HIGH);
+  digitalWrite(sari3, LOW);
+  digitalWrite(yesil3, LOW);
+  delay(10000);
+  
+  digitalWrite(kirmizi1, LOW); //1.sarı diğerleri kırmızı
+  digitalWrite(sari1, HIGH);
+  digitalWrite(yesil1, LOW);
+  
+  digitalWrite(kirmizi2, HIGH);
+  digitalWrite(sari2, LOW);
+  digitalWrite(yesil2, LOW);
+  
+  digitalWrite(kirmizi3, HIGH);
+  digitalWrite(sari3, LOW);
+  digitalWrite(yesil3, LOW);
+  delay(5000);
+  
+  digitalWrite(kirmizi1, HIGH); //2.sarı diğerleri kırmızı
+  digitalWrite(sari1, LOW);
+  digitalWrite(yesil1, LOW);
+  
+  digitalWrite(kirmizi2, LOW);
+  digitalWrite(sari2, HIGH);
+  digitalWrite(yesil2, LOW);
+  
+  digitalWrite(kirmizi3, HIGH);
+  digitalWrite(sari3, LOW);
+  digitalWrite(yesil3, LOW);
+  delay(5000);
+  
+  digitalWrite(kirmizi1, HIGH); //2. yeşil diğerleri kırmızı
+  digitalWrite(sari1, LOW);
+  digitalWrite(yesil1, LOW);
+  
+  digitalWrite(kirmizi2, LOW);
+  digitalWrite(sari2, LOW);
+  digitalWrite(yesil2, HIGH);
+  
+  digitalWrite(kirmizi3, HIGH);
+  digitalWrite(sari3, LOW);
+  digitalWrite(yesil3, LOW);
+  delay(10000);
+  
+  digitalWrite(kirmizi1, HIGH); //2.sarı diğerleri kırmızı
+  digitalWrite(sari1, LOW);
+  digitalWrite(yesil1, LOW);
+  
+  digitalWrite(kirmizi2, LOW);
+  digitalWrite(sari2, HIGH);
+  digitalWrite(yesil2, LOW);
+  
+  digitalWrite(kirmizi3, HIGH);
+  digitalWrite(sari3, LOW);
+  digitalWrite(yesil3, LOW);
+  delay(5000);
+  
+  digitalWrite(kirmizi1, HIGH); // 3.sarı diğerleri kırmızı
+  digitalWrite(sari1, LOW);
+  digitalWrite(yesil1, LOW);
+  
+  digitalWrite(kirmizi2, HIGH);
+  digitalWrite(sari2, LOW);
+  digitalWrite(yesil2, LOW);
+  
+  digitalWrite(kirmizi3, LOW);
+  digitalWrite(sari3, HIGH);
+  digitalWrite(yesil3, LOW);
+  delay(5000);
+  
+  digitalWrite(kirmizi1, HIGH); //3. yeşil diğerleri kırmızı
+  digitalWrite(sari1, LOW);
+  digitalWrite(yesil1, LOW);
+  
+  digitalWrite(kirmizi2, HIGH);
+  digitalWrite(sari2, LOW);
+  digitalWrite(yesil2, LOW);
+  
+  digitalWrite(kirmizi3, LOW);
+  digitalWrite(sari3, LOW);
+  digitalWrite(yesil3, HIGH);
+  delay(8500);
+} 
+  
+  do {
+  digitalWrite(kirmizi1, LOW);
+  digitalWrite(sari1, HIGH);
+  digitalWrite(yesil1, LOW);
+ 
+  digitalWrite(kirmizi2 ,HIGH);
+  digitalWrite(sari2, LOW);
+  digitalWrite(yesil2, LOW);
+ 
+  digitalWrite(kirmizi3, HIGH);
+  digitalWrite(sari3, LOW);
+  digitalWrite(yesil3, LOW);
+  delay(2000);
+ 
+  digitalWrite(kirmizi1, LOW);
+  digitalWrite(sari1, LOW);
+  digitalWrite(yesil1, LOW);
+ 
+  digitalWrite(kirmizi2 ,LOW);
+  digitalWrite(sari2, LOW);
+  digitalWrite(yesil2, LOW);
+ 
+  digitalWrite(kirmizi3, LOW);
+  digitalWrite(sari3, LOW);
+  digitalWrite(yesil3, LOW);
+  delay(1000);
+
+  } while(true);
+
+}
